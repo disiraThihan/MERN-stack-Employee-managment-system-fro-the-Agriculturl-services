@@ -1,0 +1,170 @@
+/*  all -> allbox -> allcardbox -> allcard */
+.rubber:hover{
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+.shake:hover{
+    animation: shakeX;
+    animation-duration: 1s;
+}
+.heart:hover{
+    animation: heartBeat;
+    animation-duration: 1s;
+}
+
+.all{
+    position: relative;
+    /* border: 10px solid yellow; */
+    padding-top: 9rem;
+    /*background-color: var(--bgblack);*/
+}
+.canvas1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid blue; */
+}
+.allbox{
+    /* border: 1px solid white; */
+
+    width: 70%;
+    margin: auto;
+    padding: 5rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.allcardbox{
+    position: relative;
+    width: 280px;
+    margin-bottom: 5rem;
+    padding-top: 6rem;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(158, 158, 158, 0.314);
+}
+.allcard{
+    color: var(--cardtext);
+    background-color: var(--cardbg);
+    font-family: 'Poppins', sans-serif;
+    padding: 4rem 1.5rem 1rem;
+    height: 360px;
+}
+
+/* -----------------------image------------------------- */
+.allcardimg{
+    width: 120px;
+    position: absolute;
+    top: 1.5rem;
+    left: 28%;
+    border-radius: 50%;
+    transition: all 0.35s;
+}
+.allcardimg:hover{
+    outline: 6px solid white;
+    animation: swing;
+    animation-duration: 1s;
+}
+
+/* -----------------------username------------------------- */
+.allusername{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* -----------------------flex box------------------------- */
+.agegenderbox{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.age{
+    width: 40%;
+}
+.gender{
+    width: 40%;
+}
+.size15{
+    font-size: 15px;
+}
+
+/* -----------------------emial and phone------------------------- */
+.allemail{
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+}
+.allemail i{
+    font-size: 1.3rem;
+    padding-right: 1rem;
+}
+.allphone i{
+    font-size: 1.3rem;
+    padding-right: 1rem;
+}
+.allphone{
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+}
+
+/* -----------------------edit and delete buttons------------------------- */
+.allcardbtns{
+    display: flex;
+    justify-content: space-evenly;
+}
+.editbtn{
+    background-color: var(--cardbtnsbg);
+    font-size: 1.5rem;
+    display: inline-block;
+    border: 4px solid var(--cardbtnsborder);
+    padding: 0.5rem 1rem;
+    transition: all 0.5s;
+}
+.editbtn:hover{
+    transform: scale(1.2);
+}
+.removebtn{
+    background-color: var(--cardbtnsbg);
+    font-size: 1.5rem;
+    border: 4px solid var(--cardbtnsborder);
+    padding: 0.5rem 1rem;
+    transition: all 0.5s;
+}
+.removebtn:hover{
+    transform: scale(1.2);
+}
+
+/* -----------------------expand button------------------------- */
+.allexpand{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.allexpand:hover{
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+
+
+
+@media (min-width: 0) and (max-width: 391px){
+    .all{
+        width: 101vw;
+    }
+    .allexpand{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,74 @@
+.cardFamEmp{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    margin: 40px;
+    border-radius: 70px;
+    border-style: double;
+    
+   
+
+}
+
+.cardFamEmp:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.con2{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.58);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.5px);
+-webkit-backdrop-filter: blur(8.5px);
+border: 1px solid rgba(255, 255, 255, 0.54);
+position: relative;
+border-style: double;
+}
+
+.borders{
+    /* background-image: url(../components/dis_img/Letterhead.png);
+    background-repeat: no-repeat; */
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 800px;
+    margin-right: 100px;
+}
+
+.boxFam{
+    max-width: 100%;
+    height: 100px;
+    background-color: rgb(255, 186, 23);
+    border-radius: 20px;
+}
+
+.boxFam h3{
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.boxFam1{
+    max-width: 100%;
+    height: 100px;
+    background-color: rgb(113, 112, 111);
+    border-radius: 20px;
+}
+
+.boxFam1 h3{
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.profileFAmic{
+    background-image: url("../components/dis_img/profile.png");
+    height: 100px;
+    width: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+    
+}

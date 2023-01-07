@@ -1,0 +1,19 @@
+{
+  "name": "profile-mern-crud-app",
+  "version": "1.0.0",
+  "description": "My first mern stack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "Aniket213"
+  },
+  "author": "Aniket",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
+}

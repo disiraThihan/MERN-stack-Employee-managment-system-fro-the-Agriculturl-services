@@ -1,0 +1,178 @@
+/* --------------------------------------------avatar----------------------------------------------------------- */
+.avatarimages{
+    position: relative;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.chooseavatar{
+    color: var(--avatarchecked);
+    font-size: 1.3rem;
+    position: relative;
+    top: 0;
+    left: 5px;
+}
+.addlabel{
+    /* border: 1px solid white; */
+    position: relative;
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+.addinput{
+   display: none;
+}
+.addimg{
+    width: 100px;
+    border-radius: 50%;
+}
+.addlabel .addinput:checked ~ .addimg{
+    background-color: var(--avatarchecked);
+    box-shadow: 0 0 5px var(--avatarsh), 0 0 25px var(--avatarsh), 0 0 50px var(--avatarsh), 0 0 200px var(--avatarsh);
+}
+
+/* ------------------------------*/
+
+.add{
+    padding-top: 8rem;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--addbg);
+    position: relative;
+    overflow: hidden;
+}
+.formbox{
+    padding: 3rem 0;
+}
+.form{
+    border-radius: 20px;
+    width: 850px;
+    margin: auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--addformbg);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px var(--formshadow);
+}
+.asdf{
+    color: transparent;
+}
+
+/* buttons*/
+
+
+/* ---------------------button---------------------- */
+
+.submitbutton {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    padding: 13px 30px;
+    width: 50%;
+    color: var(--submitbtnclr);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.submitbutton:hover {
+    font-weight: 500;
+    background: var(--submitbtn);
+    box-shadow: 0 0 10px var(--submitbtnsh), 0 0 30px var(--submitbtnsh), 0 0 60px var(--submitbtnsh);
+    transition-delay: 1s;
+}
+.submitbutton span {
+    position: absolute;
+    display: block;
+}
+.submitbutton span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--submitbtn));
+}
+.submitbutton:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+.submitbutton span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, var(--submitbtn));
+}
+.submitbutton:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.submitbutton span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--submitbtn));
+}
+.submitbutton:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.submitbutton span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--submitbtn));
+}
+.submitbutton:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/* ---------------------textarea---------------------- */
+.addrightbox textarea{
+    margin-top: 2rem ;
+    width: 90%;
+    outline: none;
+    background: rgba(255, 255, 0, 0.293);
+    border-radius: 20px;
+    border: none;
+    border-left: 2px solid var(--inputborder);
+    border-bottom: 2px solid var(--inputborder);
+    color: var(--inputtextclr);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+/* ---------------------select gender---------------------- */
+.addselect{
+    display: inline-block;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--inputborder);
+    background: rgba(255, 255, 0, 0.293);
+    border-radius: 20px;
+    padding: 0 0.3rem 0.3rem 0.3rem;
+    margin-top: 1.7rem;
+    width: 44%;
+    color: var(--inputtextclr);
+    font-size: 1rem;
+}
+.addselect option{
+    background-color: var(--optionbg);
+    color: black;
+}
+

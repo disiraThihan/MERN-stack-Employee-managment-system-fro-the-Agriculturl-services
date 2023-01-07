@@ -1,0 +1,318 @@
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+.expand{
+    padding-top: 9rem;
+    height: 100vh;
+    /* color: var(--expandtextclr); */
+    color: aliceblue;
+    font-family: 'Poppins';
+    background-color: var(--expandbg);
+}
+.expandbox{
+    border: 4px solid var(--expandborder);
+    width: 865px;
+    padding: 1rem;
+    margin: 4rem auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s;
+    background-color: rgba(141, 141, 141, 0.1);
+    backdrop-filter: blur(20px);
+}
+.expandbox:hover{
+    border: 4px solid var(--expandhover);
+    box-shadow: 0 0 20px var(--expandhover);
+}
+.expandbox:hover > .expandleft{
+    border-right: 1px solid var(--expandhover);
+}
+
+/* --------------------------------------------- left box------------------------------------------------------------- */
+.expandleft{
+    border-right: 1px solid var(--expandbrright);
+    padding: 2rem 2.7rem 2rem 2rem;
+    transition: all 0.5s;
+    position: relative;
+}
+.expandimg{
+    width: 150px;
+    display: inline-block;
+}
+.expandusername{
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+/* --------agegender----------- */
+
+.expandage{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.expandage1{
+    width: 60%;
+    text-align: left;
+    font-weight: 500;
+}
+.expandage2{
+    text-align: left;
+    padding-left: 0.5rem;
+    width: 40%;
+    font-weight: 300;
+}
+.expandgender{
+    display: flex;
+    justify-content: space-between;
+}
+.expandgender1{
+    width: 60%;
+    text-align: left;
+    font-weight: 500;
+}
+.expandgender2{
+    text-align: left;
+    padding-left: 0.5rem;
+    width: 40%;
+    font-weight: 300;
+}
+
+/* --------------------------------------------- right box------------------------------------------------------------- */
+.expandright{
+    position: relative;
+    width: 80%;
+}
+
+/* ------------------ right upper box-------------------------- */
+.expandrightup{
+    padding: 3rem 2rem 2rem;
+}
+.expandemail{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.expandemail1{
+    width: 35%;
+    text-align: left;
+    font-size: 1.05rem;
+}
+.expandemail2{
+    width: 65%;
+    font-weight: 300;
+    text-align: left;
+}
+.expandpass{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.expandpass1{
+    width: 35%;
+    text-align: left;
+    font-size: 1.05rem;
+}
+.expandpass2{
+    width: 65%;
+    font-weight: 300;
+    text-align: left;
+}
+.expandnum{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.expandnum1{
+    width: 35%;
+    text-align: left;
+    font-size: 1.05rem;
+}
+.expandnum2{
+    width: 65%;
+    font-weight: 300;
+    text-align: left;
+}
+
+/* -------------- right lower box------------------------------ */
+.expandrightdown{
+    padding: 0.5rem 2rem 1rem;
+}
+.expandabout1{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    color: #011ffd;;
+}
+.expandabout2{
+    height: 100px;
+    margin-left: 1.5rem;
+    text-align: left;
+    word-spacing: 0.3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.expandbtns{
+    border: 2px solid var(--expandbtnsbr);
+    position: absolute;
+    display: block;
+    bottom: -27%;
+    left: 0;
+    width: 621px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+.expandeditbtn{
+    display: block;
+    position: relative;
+    width: 50%;
+    font-family: 'Poppins';
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--expandbtnsclr);
+    transition: all 1s;
+}
+.expandeditbtn:hover{
+    box-shadow: inset 16em 0 0 0 var(--expandeditbtnbg), inset -16em 0 0 0 var(--expandeditbtnbg);
+}
+.expanddelbtn{
+    position: relative;
+    border: none;
+    width: 50%;
+    background: transparent;
+    color: var(--expandbtnsclr);
+    font-family: 'Poppins';
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    transition: all 1s;
+}
+.expanddelbtn:hover{
+    box-shadow: inset -16em 0 0 0 var(--expanddelbtnbg), inset 16em 0 0 0 var(--expanddelbtnbg);
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+
+
+
+@media (min-width: 0) and (max-width: 391px){
+    .expand{
+        height: auto;
+        width: 101vw;
+        overflow: hidden;
+        padding-top: 7rem;
+    }
+    .expandbox{
+        border: none;
+        border-radius: 0;
+        width: 100vw;
+        display: block;
+    }
+    .expandleft{
+        border: none;
+        width: 100%;
+        padding: 1rem;
+    }
+    .expandusername{
+        padding-bottom: 1rem;
+    }
+    .expandright{
+        width: 100%;
+    }
+    .expandrightup{
+        padding: 1rem;
+    }
+    .expandrightdown{
+        padding: 1rem;
+    }
+    .expandage{
+        width: 50%;
+        display: inline-block;
+        padding-right: 2rem;
+    }
+    .expandage1{
+        font-size: 1.2rem;
+        width: 40vw;
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 0.5rem;
+        padding-right: 2rem;
+    }
+    .expandage1span{
+        display: none;
+    }
+    .expandage2{
+        width: 65%;
+        display: inline;
+    }
+    .expandgender{
+        width: 50%;
+        display: inline-block;
+    }
+    .expandgender1{
+        font-size: 1.2rem;
+        width: 40vw;
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+    .expandgender1span{
+        display: none;
+    }
+    .expandgender2{
+        width: 65%;
+        display: inline;
+    }
+    .expandbtns{
+        position: static;
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    .expandeditbtn{
+        border: 1px solid white;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .expanddelbtn{
+        border: 1px solid white;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .linesbackground{
+        height: 95vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

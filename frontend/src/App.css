@@ -1,0 +1,43 @@
+
+
+.darkmode{
+  --bgblack : #000;
+  
+  /* ---------- allcard-------------- */
+  --cardbg : #111;
+  --cardtext : #fff;
+  --cardbtnsbg : #000;
+  --cardbtnsborder : #fff;
+  /* ---------- add page-------------- */
+
+  --addformbg : rgba(141, 141, 141, 0.15);
+  --formshadow : transparent;
+  --redball : #fe0853;
+  --yellowball : #fdf200;
+  --greenball : #08fdd8;
+  --pinkball : #ff61be;
+  --redballsh : #fe0853;
+  --yellowballsh : #fdf200;
+  --greenballsh : #08fdd8;
+  --pinkballsh : #ff61be;
+  --ballinsetsh : rgba(0,0,0,.35);
+  --chooseavatar : #fff;
+  --avatarchecked : #fdf200;
+  --avatarsh : #fdf200;
+  --inputborder : #fff;
+  --inputtextclr : #fdf200;
+  --optionbg : #fdf200;
+  --submitbtnclr : white;
+  --submitbtn: #fe0853;
+  --submitbtnsh : #fe0853;
+/* ------------expand---------------- */
+  --expandbg : #000;
+  --expandtextclr: #fff;
+  --expandborder: #fff;
+  --expandhover: #011ffd;
+  --expandbrright : rgba(255, 255, 255, 0.237);
+  --expandbtnsbr : #fff;
+  --expandbtnsclr : #fff;
+  --expandeditbtnbg: #011ffd;
+  --expanddelbtnbg: #fe0853;
+}
