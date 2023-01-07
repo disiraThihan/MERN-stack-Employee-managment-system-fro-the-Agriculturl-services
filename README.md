@@ -3,8 +3,6 @@ This is my first MERN application.
 
 
 
-https://user-images.githubusercontent.com/99321374/177532427-679f8a25-2734-4bc6-af4f-25242bc1d65b.mp4
-
 
 ## Key features
 - CREATE - We can add data to database.
